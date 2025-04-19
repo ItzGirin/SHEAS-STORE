@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Girin - Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container store-container">
+    <h1>My Store</h1>
+    <p>Welcome to my store! Here you can find comics and Minecraft accounts for sale.</p>
+    <div class="products">
+      <div class="product" data-id="1">
+        <h3>Comic Book 1</h3>
+        <p>Exciting comic book for all ages.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product" data-id="2">
+        <h3>Minecraft Account 1</h3>
+        <p>Premium Minecraft account with skins.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="cart">
+      <h3>Shopping Cart</h3>
+      <ul class="cart-items"></ul>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+    <div class="checkout-form" style="display:none;">
+      <h3>Checkout</h3>
+      <form id="checkout-form">
+        <label for="address">Address:</label><br />
+        <textarea id="address" name="address" rows="3" required></textarea><br />
+        <label for="payment">Payment Method:</label><br />
+        <select id="payment" name="payment" required>
+          <option value="">Select a payment method</option>
+          <option value="credit-card">Credit Card</option>
+          <option value="bank-transfer">Bank Transfer</option>
+          <option value="e-wallet">E-Wallet</option>
+        </select><br />
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+    <div class="comments">
+      <h3>Comments</h3>
+      <ul class="comment-list"></ul>
+      <form class="comment-form">
+        <input type="text" class="comment-input" placeholder="Add a comment..." required />
+        <button type="submit">Post</button>
+      </form>
+    </div>
+    <a href="index.html" class="back-link">Back to Home</a>
+  </div>
+  <script src="store.js"></script>
+</body>
+</html>
