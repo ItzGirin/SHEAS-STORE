@@ -233,3 +233,13 @@ h1 {
   background-color: #666666;
   box-shadow: 0 8px 20px #666666;
 }
+
+.social-link.instagram {
+  background: #E1306C;
+  box-shadow: 0 4px 12px #E1306C;
+}
+
+.social-link.instagram:hover {
+  background: #b02859;
+  box-shadow: 0 8px 20px #b02859;
+}
