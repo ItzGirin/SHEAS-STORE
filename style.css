@@ -234,6 +234,74 @@ h1 {
   box-shadow: 0 8px 20px #666666;
 }
 
+.social-link.sheaprofil {
+  background: #ff69b4; /* pink background */
+  box-shadow: 0 4px 12px #ff69b4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.social-link.sheaprofil:hover {
+  background: #e055a1;
+  box-shadow: 0 8px 20px #e055a1;
+}
+
+.social-link.mystore,
+.social-link.shopee,
+.social-link.tokopedia,
+.social-link.sheaprofil {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  text-align: center;
+}
+
+.social-link.mystore img,
+.social-link.sheaprofil img,
+.social-link.shopee i,
+.social-link.tokopedia i {
+  position: absolute;
+  left: 1rem;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.social-link.mystore img,
+.social-link.sheaprofil img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.social-link.shopee i,
+.social-link.tokopedia i {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.social-link.sheaprofil:hover {
+  background: #e055a1;
+  box-shadow: 0 8px 20px #e055a1;
+}
+
+.social-link.sheaprofil img {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
 .social-link.instagram {
   background: #E1306C;
   box-shadow: 0 4px 12px #E1306C;
