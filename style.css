@@ -319,8 +319,8 @@ h1 {
 }
 
 .social-link.portofolio {
-  background: blue;
-  box-shadow: 0 4px 12px blue;
+  background: #007BFF;
+  box-shadow: 0 4px 12px #007BFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,12 +332,12 @@ h1 {
   border-radius: 12px;
   color: white;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 12px blue;
+  box-shadow: 0 4px 12px #007BFF;
 }
 
 .social-link.portofolio:hover {
-  background: #0000cc;
-  box-shadow: 0 8px 20px #0000cc;
+  background: #0056b3;
+  box-shadow: 0 8px 20px #0056b3;
 }
 
 .social-link.portofolio i {
