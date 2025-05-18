@@ -1,0 +1,107 @@
+/* Dark Theme Overrides - Brighter Version */
+
+body {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+}
+
+a {
+  color: #a78bfa;
+}
+
+a:hover {
+  color: #7c3aed;
+}
+
+.main-nav {
+  background-color: #2a2a2a;
+}
+
+.main-nav .logo {
+  color: #a78bfa;
+}
+
+.main-nav .nav-links li a {
+  color: #dcdcdc;
+}
+
+.main-nav .nav-links li a:hover {
+  color: #a78bfa;
+}
+
+.btn-primary {
+  background-color: #5b21b6;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #7c3aed;
+}
+
+.btn-secondary {
+  color: #a78bfa;
+  border-color: #a78bfa;
+}
+
+.btn-secondary:hover {
+  background-color: #5b21b6;
+  color: #fff;
+}
+
+.services, .about, .advantages, .story-section, .gallery, footer {
+  background-color: #2a2a2a;
+  color: #dcdcdc;
+  box-shadow: none;
+}
+
+.service-item, .advantage-item {
+  background-color: #3b3b3b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  color: #dcdcdc;
+  border: none;
+}
+
+.service-item h3, .advantage-item h3, .services h2, .about-content h2, .advantages h2, .story-section h2, .section-title {
+  color: #a78bfa;
+}
+
+.service-item p, .advantage-item p, .services p, .about-content p, .advantages p, .story-text p {
+  color: #ccc;
+}
+
+.gallery-items a {
+  border-color: #555;
+  background-color: #3b3b3b;
+}
+
+.gallery-items img {
+  border: none;
+  background-color: transparent;
+}
+
+.hero {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.testimonial {
+  background-color: #2a2a2a;
+  color: #dcdcdc;
+}
+
+.testimonial-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.caption {
+  color: #ccc;
+}
+
+footer {
+  background-color: #2a2a2a;
+  color: #ccc;
+}

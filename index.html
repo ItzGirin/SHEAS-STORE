@@ -1,73 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Girin - Social</title>
-  <link rel="icon" href="https://media-hosting.imagekit.io/42db61911adc462d/IMG-20241201-WA0006.jpg?Expires=1841194910&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=1jLC5v0RlA-IdAWJFl4Fj6D3ViPEggxvt~MmqXuw-pqYZ7emEQ4sm5SQFK6HUelIwnV9~aivVxbIGHkDDpymw6Ha45tBMBwHafLRJwhHkphgzGWSLKuLamYlFyePDdIJpchLhwHN6sGuGausMAWQKESOjRZW9XU3NON1O0nKnHvBCKvMTjB~0jwSzRLJQS0BZf4iuT9WxVYV608BHn461HRccTuTukdvGzCAEkw8jmZCRGNuqpHg2GD6QdOZjKw2utwJcE3F8sFitsASPQLbtcB1lr0n9alZxCT~1jp8E8QECKwknVJASAVFYM7UH-cz05Z3y6fzj4lLh4US20Xf4w__" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Fotografi </title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="active-tab.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
 <body>
-  <div class="container">
-    <div class="profile-pic">
-      <img src="/LOGO TRANSPARENT GIRIN24.png" alt="Profile Picture" />
+  <nav class="main-nav">
+    <div class="container">
+      <a href="#" class="logo">Girindhra L.A</a>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <!-- <li><a href="#">Blog</a></li> -->
+        <li><a href="about.html">About</a></li>
+        <li><a href="fotografi.html">FOTO</a></li>
+        <li><a href="desain-website.html">WEBSITE</a></li>
+        <!-- <li><a href="layanan.html">Layanan</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-    <h1>Girin</h1>
-    <nav class="nav-menu">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#link" class="nav-link">Link</a>
-      <a href="#social" class="nav-link active">Social</a>
-    </nav>
-    <div class="tab-contents">
-      <section id="about" class="tab-content">
-        <div class="about-content">
-          <p>Halo! Saya Girin, seorang gamer dan kreator konten yang bersemangat. Saya suka bermain game seperti Minecraft, Valorant, Mobile Legend, Roblox, Call of Duty Mobile, Call of Duty Advanced Warfare, GTA 5, Halo Infinite, dan Warframe.</p>
-          <p>Tapi kalau lagi bosen nge game, saya suka fotografi dan berbagi petualangan saya dengan komunitas saya. Ikuti saya di saluran sosial saya untuk mendapatkan informasi terbaru!</p>
-        </div>
-      </section>
-      <section id="link" class="tab-content">
-        <div class="external-links">
-          <a href="https://shopee.co.id/sheass" target="_blank" class="social-link shopee">
-            <i class="fas fa-shopping-bag"></i> Shopee
-          </a>
-          <a href="https://www.tokopedia.com/sheass" target="_blank" class="social-link tokopedia">
-            <i class="fas fa-store"></i> Tokopedia
-          </a>
-          <a href="https://itzgirin.github.io/STORE/" target="_blank" class="social-link mystore">
-            <img src="/LOGO TRANSPARENT GIRIN24.png" alt="My Store Logo" style="height: 24px; margin-right: 8px;" /> My Store
-          </a>
-+          <a href="https://portofolio-girin.vercel.app/" target="_blank" class="social-link portofolio">
-+            <i class="fas fa-briefcase"></i> Portofolio 
-+          </a>
-        </div>
-      </section>
-      <section id="social" class="tab-content">
-        <div class="social-links">
-          <a href="https://wa.me/+6282313222097" target="_blank" class="social-link whatsapp">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a>
-          <a href="https://instagram.com/girinn_ajaa" target="_blank" class="social-link instagram">
-            <i class="fab fa-instagram"></i> Instagram
-          </a>
-          <a href="https://discord.com/invite/ZcMyesUXwT" target="_blank" class="social-link discord">
-            <i class="fab fa-discord"></i> Discord
-          </a>
-          <a href="https://www.tiktok.com/@girintwentyfour" target="_blank" class="social-link tiktok">
-            <i class="fab fa-tiktok"></i> TikTok
-          </a>
-          <a href="https://www.youtube.com/@Girin24" target="_blank" class="social-link youtube">
-            <i class="fab fa-youtube"></i> YouTube
-          </a>
-+          <a href="https://portofolio-girin.vercel.app/" target="_blank" class="social-link portofolio">
-+            <i class="fas fa-briefcase"></i> Portofolio
-+          </a>
-        </div>
-      </section>
+  </nav>
+  <header class="hero" style="background-image: url(/beranda.JPG);">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Portofolio Girindhra</h1>
+      <p>Abadikan momen dari fotografer profesional, mengabadikan pengalaman yang tak terlupakan .</p>
+<a href="#services" class="btn-primary">Lihat Karya</a>
     </div>
-    
-  </div>
+  </header>
+
+  <section id="services" class="services">
+    <h2>Fotografi Profesional</h2>
+    <p>Temukan berbagai layanan berkualitas tinggi yang kami tawarkan untuk kebutuhan fotografi dan pembuatan website portofolio.</p>
+      <div class="service-items">
+        <a href="fotografi.html" class="service-item-link">
+          <article class="service-item">
+            <img src="/fotografi.JPG" alt="Fotografi" />
+            <h3>Fotografi</h3>
+            <p>Dengan pengalaman bertahun-tahun, kami menawarkan layanan fotografi untuk acara-acara spesial, portrait, dan pemandangan. Kualitas gambar yang memukau dan kreatif.</p>
+          </article>
+        </a>
+        <a href="desain-website.html" class="service-item-link">
+          <article class="service-item">
+            <img src="/portofolio.png" alt="Desain Website" />
+            <h3>Desain Website</h3>
+            <p>Kami menciptakan website portofolio yang estetis dan fungsional. Setiap desain dioptimalkan untuk menunjukkan karya Anda dengan cara yang menarik.</p>
+          </article>
+        </a>
+      </div>
+  </section>
+
+  <section class="testimonial" style="background-image: url('https://tangible-taskmaster-zol.zipwp.site/wp-content/uploads/2025/04/brown-brick-building-on-green-grass-field-4080999.jpeg'); text-align: center;">
+    <div class="testimonial-overlay"></div>
+    <div class="testimonial-content" style="display: inline-block; text-align: center;">
+      <h1 style="color: white; margin-bottom: 20px;">Tentang Kami</h1>
+      <blockquote style="margin: 0 auto; max-width: 600px;">
+        "Girin berhasil menangkap momen yang saya inginkan dengan sangat baik. Karya mereka sungguh memukau dan berkualitas tinggi."
+      </blockquote>
+      <cite>— Faiz Arya Sena</cite>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <h2>Keunggulan Layanan Kami dalam Fotografi dan Desain</h2>
+    <p>Kami mengedepankan kualitas, kreativitas, dan pengalaman yang tak tertandingi dalam setiap proyek, memastikan kepuasan pelanggan maksimal.</p>
+    <div class="advantage-items">
+      <article class="advantage-item">
+        <img src="/nokompromi.jpeg" alt="Kualitas Tanpa Kompromi" />
+        <h3><a href="fotografi.html" class="link-primary">Kualitas Tanpa Kompromi</a></h3>
+        <p>Kami berkomitmen untuk memberikan karya fotografi dan desain web dengan kualitas terbaik. Setiap detail diperhatikan untuk memuaskan klien kami.</p>
+        <a href="fotografi.html" class="btn-secondary">Pelajari Selengkapnya</a>
+      </article>
+      <article class="advantage-item">
+        <img src="/griariasratih.png" alt="Pengalaman Interaktif" />
+        <h3><a href="desain-website.html" class="link-primary">Pengalaman Interaktif</a></h3>
+        <p>Website kami tidak hanya indah secara visual, tetapi juga interaktif.  membuat pengalaman pengguna lebih menyenangkan.</p>
+        <a href="desain-website.html" class="btn-secondary">Pelajari Selengkapnya</a>
+      </article>
+    </div>
+  </section>
+
   <script src="script.js"></script>
 </body>
 </html>

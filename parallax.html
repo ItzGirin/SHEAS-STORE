@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parallax with Particles - Girindhra L.A</title>
+  <link rel="stylesheet" href="parallax.css" />
+  <script src="particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <!-- Logo Intro Overlay -->
+  <div id="logo-intro">
+    <img src="LOGO TRANSPARENT GIRIN24.png" alt="Girin24 Logo" id="logo-image" />
+  </div>
+
+  <header class="hero" style="opacity: 0;">
+    <div class="hero-content">
+      <h1>Portofolio Girindhra</h1>
+      <p>Abadikan momen dari fotografer profesional, mengabadikan pengalaman yang tak terlupakan.</p>
+      <a href="#services" class="btn-primary">Lihat Karya</a>
+    </div>
+  </header>
+
+  <section id="services" class="services">
+    <h2>Fotografi Profesional</h2>
+    <p>Temukan berbagai layanan berkualitas tinggi yang kami tawarkan untuk kebutuhan fotografi dan pembuatan website portofolio.</p>
+    <div class="service-items">
+      <article class="service-item">
+        <img src="https://media-hosting.imagekit.io/0b5ca5d0b8cb4f23/IMG_0045.JPG" alt="Fotografi" />
+        <h3>Fotografi</h3>
+        <p>Layanan fotografi untuk acara-acara spesial, portrait, dan pemandangan. Kualitas gambar yang memukau dan kreatif.</p>
+      </article>
+      <article class="service-item">
+        <img src="https://media-hosting.imagekit.io/6b9518c234464af0/screenshot_1745655199238.png" alt="Desain Website" />
+        <h3>Desain Website</h3>
+        <p>Kami menciptakan website portofolio yang estetis dan fungsional. Setiap desain dioptimalkan untuk menunjukkan karya Anda dengan cara yang menarik.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <h2>Tentang Kami</h2>
+    <blockquote>
+      "Girin berhasil menangkap momen yang saya inginkan dengan sangat baik. Karya mereka sungguh memukau dan berkualitas tinggi."
+    </blockquote>
+    <cite>— Faiz Arya Sena</cite>
+  </section>
+
+  <section class="advantages">
+    <h2>Keunggulan Layanan Kami</h2>
+    <p>Kami mengedepankan kualitas, kreativitas, dan pengalaman yang tak tertandingi dalam setiap proyek, memastikan kepuasan pelanggan maksimal.</p>
+  </section>
+
+  <script src="parallax.js"></script>
+  <script>
+    /* Initialize particles.js with basic config */
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle"
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false
+        },
+        "size": {
+          "value": 3,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 3,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "push": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>

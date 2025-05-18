@@ -1,0 +1,8 @@
+.main-nav .nav-links li a.active {
+  color: #f39c12;
+  border: 2px solid #f39c12;
+  border-radius: 6px;
+  padding: 6px 12px;
+  box-shadow: 0 0 8px #f39c12;
+  transition: all 0.3s ease;
+}
