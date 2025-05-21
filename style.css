@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: pink;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   color: #222;
   display: flex;
   justify-content: center;
@@ -13,17 +13,30 @@ body {
 }
 
 .container {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(230, 230, 230, 0.8));
+  background: rgba(255, 255, 255, 0.85);
   padding: 3rem 4rem;
   border-radius: 20px;
   box-shadow: 0 12px 40px rgba(0,0,0,0.15);
   text-align: center;
   width: 360px;
-  backdrop-filter: blur(12px);
+  height: 520px;
+  min-height: 520px;
+  max-height: 520px;
+  backdrop-filter: none;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  width: 100%;
+  text-align: center;
 }
 
 .tab-content {
@@ -31,20 +44,6 @@ body {
   box-shadow: none !important;
   padding: 1rem 0 !important;
   border-radius: 0 !important;
-}
-
-.container {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 3rem 4rem;
-  border-radius: 20px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-  text-align: center;
-  width: 360px;
-  backdrop-filter: blur(10px);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .profile-pic img {
@@ -117,6 +116,13 @@ h1 {
 }
 
 .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.external-links {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -234,6 +240,74 @@ h1 {
   box-shadow: 0 8px 20px #666666;
 }
 
+.social-link.sheaprofil {
+  background: #ff69b4; /* pink background */
+  box-shadow: 0 4px 12px #ff69b4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.social-link.sheaprofil:hover {
+  background: #e055a1;
+  box-shadow: 0 8px 20px #e055a1;
+}
+
+.social-link.mystore,
+.social-link.shopee,
+.social-link.tokopedia,
+.social-link.sheaprofil {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  text-align: center;
+}
+
+.social-link.mystore img,
+.social-link.sheaprofil img,
+.social-link.shopee i,
+.social-link.tokopedia i {
+  position: absolute;
+  left: 1rem;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.social-link.mystore img,
+.social-link.sheaprofil img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.social-link.shopee i,
+.social-link.tokopedia i {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.social-link.sheaprofil:hover {
+  background: #e055a1;
+  box-shadow: 0 8px 20px #e055a1;
+}
+
+.social-link.sheaprofil img {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
 .social-link.instagram {
   background: #E1306C;
   box-shadow: 0 4px 12px #E1306C;
@@ -244,14 +318,31 @@ h1 {
   box-shadow: 0 8px 20px #b02859;
 }
 
-.social-link.shea-profil {
-  background-color: pink;
-  box-shadow: 0 4px 12px pink;
-  color: #222;
+.social-link.portofolio {
+  background: #007BFF;
+  box-shadow: 0 4px 12px #007BFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px #007BFF;
 }
 
-.social-link.shea-profil:hover {
-  background-color: #ff66cc;
-  box-shadow: 0 8px 20px #ff66cc;
+.social-link.portofolio:hover {
+  background: #0056b3;
+  box-shadow: 0 8px 20px #0056b3;
+}
+
+.social-link.portofolio i {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1rem;
   color: white;
 }
